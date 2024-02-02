@@ -18,6 +18,7 @@ function toggleSearchIcon() {
             searchInput.style.opacity = '0';
         }
 
+       
 
         event.stopPropagation();
     });
@@ -53,7 +54,7 @@ function toggleAccountIcon() {
     });
 
     document.addEventListener('click', (event) => {
-        if (isVisible) {
+        if (!accountWrapper.contains(event.target) && isVisible) {
             wrapper.classList.remove('account-blur');
             accountWrapper.style.visibility = 'hidden';
             accountWrapper.style.opacity = '0';
