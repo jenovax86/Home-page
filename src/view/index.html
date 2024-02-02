@@ -5,11 +5,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Home-Page</title>
+    <script src="../js/main.js"></script>
 </head>
 
 <body>
-   
+    <div id="wrapper">
+        <div class="header">
+            <h1>Logo</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Features</li>
+                    <li>Contact us</li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <span class="header-icons-search"><i id="search" class='bx bx-search' onclick="toggleSearchIcon()"></i></span>
+                <span class="header-icons-account"><i id="account" class='bx bx-user-circle' onclick="toggleAccountIcon()"></i></span>
+            </div>
+        </div>
+        <img class="background-image" src="../images/8d98wrhcwlp51.png" />
+    </div>
+    <div id="account-wrapper" class="header-account-wrapper">
+        <h2 class="header-account-title">Login</h2>
+        <form class="header-account-form" action="www.example.com" id="header-form">
+            <label for="email">Email</label>
+            <input id="email" class="header-account-email-input" type="email" placeholder="What is your email?" />
+            <label for="assword">Password</label>
+            <input id="password" class="header-account-password-input" type="password"
+                placeholder="What is your password?" />
+
+            <div class="header-account-details">
+                <p>You do not have an account? <span><a href="www.example.com">SignUp</a></span></p>
+                <a href="www.example.com">You forget your password?</a>
+            </div>
+
+            <button class="header-account-form-button">Login</button>
+
+        </form>
+    </div>
+    <div id="search-wrapper" class="header-search-wrapper">
+        <input class="header-search-input" type="search" placeholder="What are you looking for?" />
+        <i class='search-input bx bx-search'></i>
+    </div>
 </body>
 
 </html>
